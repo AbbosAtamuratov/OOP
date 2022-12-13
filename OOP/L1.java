@@ -20,6 +20,19 @@ public class L1 {
         System.out.println(mach2.findByName("kind"));
         System.out.println(mach2.findByPrice(12));
         System.out.println(mach2.findByPriceRange(9,13));
+        System.out.println("==========================HOMEWORK=================================================\n");
+
+        List<Product> konfetki = new ArrayList<>();
+
+        konfetki.add(new Candy("mlechny put\'", 16, "chocolate", "moloko"));
+        konfetki.add(new Candy("nagrada", 19, "chocolate", "coconut"));
+        konfetki.add(new Candy("giant cock on a stick", 15, "caramel", "sugar")); // петyшок на палочке
+        konfetki.add(new Candy("horoshiy parizh", 19, "jelly", "apple"));
+        konfetki.add(new Veggies("Jose", 22, "Jalapeno on a Stick"));
+        konfetki.add(new Veggies("Ricardo", 12, "Carolina Pepper"));
+
+        VendingMachine mach3Turbo = new VendingMachine(konfetki);
+        System.out.println(mach3Turbo);
 
     }
 }
