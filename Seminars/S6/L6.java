@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class L6 {
 
@@ -40,6 +39,7 @@ public class L6 {
 //        List<Integer> a = ints.stream().filter(ints :: contains).collect(Collectors.toList());
 //        System.out.println(a);
 
+        reverseComparator compy = new reverseComparator();
         CustomTSet tree = new CustomTSet();
 
         for (int i = 0; i < 10; i++) {
@@ -51,19 +51,14 @@ public class L6 {
 
         tree.m_show();
 
-        Comparator comp = new Comparator() {
-            @Override
-            public int compare(Object o1, Object o2) {
-                return 0;
-            }
-
-            @Override
-            public boolean equals (Object o){
-                return false;
-            }
-        };
-
-//        Collections.sort(Arrays.asList
+        TreeSet<Integer> properTree = new TreeSet<>(compy);
+        for (int i = 0; i < 6; i++) {
+            int r = new Random().nextInt(-10,10);
+            System.out.printf("%d   ", r);
+            properTree.add(r);
+        }
+        System.out.println();
+        System.out.println(properTree);
 
     }
 }
