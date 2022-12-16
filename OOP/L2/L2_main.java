@@ -1,10 +1,11 @@
-public class L2 {
+public class L2_main {
     public static void main(String[] args) {
         ZOO z1 = new ZOO();
         z1.Add_animal(new Cat("Matroskin", "Fedor", 6, "white"));
         z1.Add_animal(new Doggo("Doge", "BonkStick", 9 , "gold"));
         z1.Add_animal(new Duck("Donald", "Duck", 3))
-                .Add_animal(new Eagle("Teddy", "Abe Lincoln", 5));
+                .Add_animal(new Eagle("Teddy", "Abe Lincoln", 5))
+                .Add_animal(new Crocodile("Gena", "some", 35));
         System.out.println(z1);
         System.out.println(z1.talk());
         System.out.println();

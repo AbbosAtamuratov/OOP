@@ -22,9 +22,3 @@ Owner: Abe Lincoln
 Weight: 5
 
 
-
-Crocodile: Gena
-Owner: None
-Weight: 35
-
-
