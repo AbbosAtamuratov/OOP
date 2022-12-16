@@ -1,0 +1,24 @@
+
+Cat: Matroskin
+Owner: Fedor
+Weight: 6
+color: white
+
+
+Dog: Doge
+Owner: BonkStick
+Weight: 9
+color: gold
+
+
+Duck: Donald
+Owner: Duck
+Weight: 3
+
+
+
+Eagle: Teddy
+Owner: Abe Lincoln
+Weight: 5
+
+
