@@ -1,3 +1,5 @@
+package L1;
+
 public class Candy extends Product{
 
     public Candy(String name, double price, String type, String flavor) {
