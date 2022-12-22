@@ -1,4 +1,6 @@
 import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 public class main_L3 {
     public static void main(String[] args) {
@@ -28,5 +30,6 @@ public class main_L3 {
         abc.forEach(i-> System.out.println(i));
         System.out.println();
         crew.forEach(i-> System.out.println(i));
+        List<Integer> a = new LinkedList<>();
     }
 }
