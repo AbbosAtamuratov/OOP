@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -30,7 +29,7 @@ public class Team <T extends Warrior> implements Iterable<T>{
     public int getOverallDmg(){
         int res = 0;
         for (T i: this.team) {
-            res += i.getWunderwaffe().bonk();
+            res += i.getLead_hand().bonk();
         };
         return  res;
     }
@@ -38,10 +37,10 @@ public class Team <T extends Warrior> implements Iterable<T>{
     public int getMaxRange(){
         int res = 0;
         for (T i: this.team) {
-            if (res<i.getWunderwaffe().range())
-                res = i.getWunderwaffe().range();
+            if (res<i.getLead_hand().range())
+                res = i.getLead_hand().range();
         };
-        return  res;
+        return res;
     }
 
 }

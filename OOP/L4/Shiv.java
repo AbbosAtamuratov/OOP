@@ -1,8 +1,6 @@
-public abstract class Shiv implements Armed{
+public abstract class Shiv implements Weapon {
 
     @Override
     public int range() { return 2;}
-
-    private String description;
 
 }

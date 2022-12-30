@@ -6,6 +6,9 @@ public class GreatSword extends Shiv{
     }
 
     @Override
+    public boolean double_handed() { return true; }
+
+    @Override
     public int range() {
         return 2;
     }

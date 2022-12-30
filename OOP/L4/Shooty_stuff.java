@@ -1,5 +1,5 @@
-public abstract class Shooty_stuff implements Armed {
+public abstract class Shooty_stuff implements Weapon {
 
-    private String description;
-
+    @Override
+    public boolean double_handed(){ return true;}
 }

@@ -28,6 +28,13 @@ public class L4_main {
         System.out.println(c3);
         mixed.forEach(i -> System.out.println(i));
         System.out.println(TeamStats(mixed));
+
+        Commander c4 = new Commander("Joey", new Katana(), new HeavyShield(), 350);
+        Team<Warrior> dualwield = new Team<>(c4);
+        dualwield.addWarrior(new Samurai("Chandler", new Katana(), new Tanto(), 180));
+        dualwield.addWarrior(new Archer("Ross", new LongBow(), 150));
+        System.out.println(c4);
+        dualwield.forEach(i-> System.out.println(i));
     }
     public static String TeamStats(Team t){
         return String.format("Общее здоровье: %d\nОбщий уррон: %d\nМакс. Дальность: %d\n", t.getOverallHp(), t.getOverallDmg(), t.getMaxRange());

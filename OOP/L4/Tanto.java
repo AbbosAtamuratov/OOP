@@ -1,8 +1,8 @@
-public class Katana extends Shiv{
+public class Tanto extends Shiv{
 
     @Override
     public int bonk() {
-        return 20;
+        return 12;
     }
 
     @Override
@@ -14,5 +14,5 @@ public class Katana extends Shiv{
     public boolean double_handed() { return false; }
 
     @Override
-    public String toString(){ return String.format("Катана: урон - %d, дальность - %d", bonk(), range()); }
+    public String toString(){ return String.format("Танто: урон - %d, дальность - %d", bonk(), range()); }
 }
