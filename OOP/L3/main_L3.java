@@ -30,6 +30,11 @@ public class main_L3 {
         abc.forEach(i-> System.out.println(i));
         System.out.println();
         crew.forEach(i-> System.out.println(i));
-        List<Integer> a = new LinkedList<>();
+        LL<String> lst = new LL<>();
+        lst.addLast("Warudo!");
+        lst.addFirst("Za ");
+        System.out.println("----------------------------------------------------------------");
+        System.out.println("----------------------------------------------------------------");
+        lst.forEach(i-> System.out.printf("%s",i));
     }
 }
